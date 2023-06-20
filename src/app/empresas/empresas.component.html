@@ -62,3 +62,26 @@
     </form>
   </div>
 </div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Razão Social</th>
+      <th scope="col">Nome Fantasia</th>
+      <th scope="col">Ramo de Atividade</th>
+      <th scope="col">Email</th>
+      <th scope="col">Contato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let empresas of empresas">
+      <th scope="row">{{ empresas.id }}</th>
+      <td>{{ empresas.razao_social }}</td>
+      <td>{{ empresas.nome_fantasia }}</td>
+      <td>{{ empresas.ramo }}</td>
+      <td>{{ empresas.email }}</td>
+      <td>{{ empresas.contato }}</td>
+    </tr>
+  </tbody>
+</table>
