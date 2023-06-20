@@ -44,5 +44,11 @@ export class EmpresasComponent {
       }
     });
   }
+  remove(empresas : Empresas): void{
+    this.empresasService.remove(empresas).subscribe({
+      next: () => this.loadEmpresas()
+    });
+
+}
 
 }

@@ -72,6 +72,7 @@
       <th scope="col">Ramo de Atividade</th>
       <th scope="col">Email</th>
       <th scope="col">Contato</th>
+      <th scope="col">Opções</th>
     </tr>
   </thead>
   <tbody>
@@ -82,6 +83,11 @@
       <td>{{ empresas.ramo }}</td>
       <td>{{ empresas.email }}</td>
       <td>{{ empresas.contato }}</td>
+      <td class="d-flex justify-content-end">
+        <button class="btn btn-danger me-1" (click)="remove(empresas)">
+          Excluir
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
